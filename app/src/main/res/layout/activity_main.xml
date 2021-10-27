@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/sanandreas" />
+
+    <ImageView
+        android:id="@+id/currentRadioIMG"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_below="@+id/logo"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/currentradioname"
+        android:fontFamily="@font/ahronbd"
+        android:textSize="30sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/currentRadioIMG"
+        android:textColor="#2A77A1"
+        android:layout_centerHorizontal="true" />
+
+
+    <ImageView
+        android:id="@+id/IMGplaypause"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/ic_play"
+        android:layout_below="@+id/currentRadioIMG"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp" />
+
+    <Button
+        android:id="@+id/BTNplaypause"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/currentRadioIMG"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:background="#00FFFFFF" />
+
+
+    <ImageView
+        android:id="@+id/nextbtn"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/ic_next"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/currentRadioIMG"/>
+
+    <ImageView
+        android:id="@+id/backbtn"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/currentRadioIMG"
+        android:background="@drawable/ic_back" />
+
+
+
+
+
+
+
+</RelativeLayout>
